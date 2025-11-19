@@ -1,0 +1,16 @@
+@use "../abstracts/" as a;
+
+.features {
+  padding-block: a.$space-7;
+}
+
+.features__grid {
+  display: grid;
+  gap: a.$space-5;
+
+  @include a.respond-to(md) {
+    & {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

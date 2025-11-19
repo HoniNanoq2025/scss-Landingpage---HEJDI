@@ -1,0 +1,14 @@
+@use "./variables" as v;
+@use "sass:map";
+
+@mixin respond-to($bp) {
+  $size: map.get(v.$breakpoints, $bp);
+  @media (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin container {
+  width: min(100% - 2rem, v.$container-max);
+  margin-inline: auto;
+}

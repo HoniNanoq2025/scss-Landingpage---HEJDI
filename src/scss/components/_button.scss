@@ -1,0 +1,32 @@
+@use "../abstracts/" as a;
+
+.button {
+  display: inline-block;
+  padding: a.$space-3 a.$space-5;
+  border-radius: a.$radius-2;
+  border: 0;
+  cursor: pointer;
+  box-shadow: a.$shadow-1;
+  transition: transform 0.08s ease, box-shadow 0.2s ease;
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.button--primary {
+  background: a.$color-primary;
+  color: #062a25;
+}
+
+.button--secondary {
+  background: transparent;
+  color: a.$color-text;
+  border: 1px solid a.$color-muted;
+}
+
+.button--ghost {
+  background: transparent;
+  color: a.$color-text;
+  border: 1px dashed a.$color-muted;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    />
+    <link rel="stylesheet" href="/public/assets/css/main.css" />
+    <title>SCSS Landingpage</title>
+  </head>
+  <body>
+    <!-- =====HEADER===== -->
+    <header class="site-header">
+      <div class="container">
+        <nav class="nav" aria-label="Hovednavigation">
+          <a class="nav__brand" href="#">LandingCo</a>
+
+          <button
+            class="nav__toggle button button--ghost"
+            aria-controls="nav-menu"
+            aria-expanded="false"
+          >
+            Menu
+          </button>
+
+          <ul id="nav-menu" class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#features" class="nav__link">Features</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <section id="home" class="hero hero--overlay">
+        <div class="container hero__inner">
+          <h1 class="hero__title">Byg hurtige, klare landing sider</h1>
+          <p class="hero__text">Kort og skarp value proposition.</p>
+
+          <a class="button button--primary hero__cta" href="#features"
+            >Se features</a
+          >
+        </div>
+      </section>
+    </header>
+
+    <!-- =====MAIN===== -->
+    <main>
+      <!-- FEATURES -->
+      <section id="features" class="features">
+        <div class="container features__grid">
+          <article class="card card--elevated">
+            <img
+              class="card__media"
+              src="/public/assets/img/nat-5.png"
+              alt=""
+            />
+            <h2 class="card__title">Hurtig opsætning</h2>
+            <p class="card__text">Kør på få minutter med klar struktur.</p>
+          </article>
+
+          <article class="card card--elevated">
+            <img
+              class="card__media"
+              src="/public/assets/img/nat-6.png"
+              alt=""
+            />
+            <h2 class="card__title">Modulær styling</h2>
+            <p class="card__text">Genbrug komponenter og hold koden ren.</p>
+          </article>
+
+          <article class="card card--elevated">
+            <img
+              class="card__media"
+              src="/public/assets/img/nat-7.png"
+              alt=""
+            />
+            <h2 class="card__title">Responsivt layout</h2>
+            <p class="card__text">
+              Fungerer på mobil og desktop med få linjer.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="contact">
+        <div class="container contact__grid">
+          <section class="contact__left">
+            <h3 class="contact__title">Contact</h3>
+            <form class="form" action="#" method="post">
+              <label class="form__label" for="name">Navn</label>
+              <input class="form__input" id="name" type="text" required />
+
+              <label class="form__label" for="email">Email</label>
+              <input class="form__input" id="email" type="text" />
+
+              <label class="form__label" for="subject">Emne</label>
+              <input class="form__input" id="subject" type="text" />
+
+              <label class="form__label" for="message">Besked</label>
+              <textarea
+                class="form__textarea"
+                name="message"
+                id="message"
+                rows="5"
+                required
+              ></textarea>
+
+              <button
+                class="button button--secondary form__submit"
+                type="submit"
+              >
+                Send
+              </button>
+            </form>
+          </section>
+
+          <section class="contact__right">
+            <img
+              class="contact__image"
+              src="/public/assets/img/nat-8.png"
+              alt=""
+            />
+            <h3 class="contact__subtitle">Book en demo</h3>
+            <ul>
+              <li class="contact__list-item">+45 12 34 56 78</li>
+              <li class="contact__list-item">kontakt@landingco.dk</li>
+              <li class="contact__list-item">Hverdage 9-15</li>
+            </ul>
+          </section>
+        </div>
+      </section>
+    </main>
+    <!-- =====FOOTER===== -->
+    <footer class="site-footer">
+      <div class="container">
+        <small class="site-footer__note">&copy; 2025 LandingCo</small>
+      </div>
+    </footer>
+    <script src="/public/js/main.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+@use "../abstracts/" as a;
+
+.form {
+  display: grid;
+  gap: a.$space-3;
+}
+
+.form__label {
+  font-weight: 700;
+}
+
+.form__input,
+.form__textarea {
+  width: 100%;
+  background: transparent;
+  border: 1px solid a.$color-muted;
+  border-radius: a.$radius-1;
+  color: a.$color-text;
+  padding: a.$space-3 a.$space-4;
+}

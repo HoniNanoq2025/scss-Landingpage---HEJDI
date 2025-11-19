@@ -1,0 +1,12 @@
+{
+  "name": "landingpage-clean-scss-links",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "sass src/scss:public/assets/css --style=expanded --no-source-map --watch",
+    "build": "sass src/scss:public/assets/css --style=compressed --no-source-map"
+  },
+  "devDependencies": {
+    "sass": "^1.94.1"
+  }
+}

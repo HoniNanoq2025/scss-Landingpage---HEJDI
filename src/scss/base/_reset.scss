@@ -1,0 +1,62 @@
+@use "../abstracts/" as a;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: a.$color-bg;
+  color: a.$color-text;
+  font-family: a.$font-family-base;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font: inherit;
+}
+
+input,
+textarea {
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: 1px solid a.$color-muted;
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+}
+
+label {
+  display: block;
+  margin-block: 0.75rem 0.5rem;
+}

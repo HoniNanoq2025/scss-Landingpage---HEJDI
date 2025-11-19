@@ -1,0 +1,22 @@
+@use "../abstracts/" as a;
+
+.card {
+  background: a.$color-surface;
+  border-radius: a.$radius-2;
+  overflow: hidden;
+  box-shadow: a.$shadow-1;
+  padding: a.$space-4;
+}
+
+.card__media {
+  border-radius: a.$radius-1;
+  margin-bottom: a.$space-3;
+}
+
+.card__title {
+  margin-bottom: a.$space-2;
+}
+
+.card--elevated {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+}

@@ -1,0 +1,21 @@
+@use "../abstracts/" as a;
+
+.hero {
+  padding-block: a.$space-8;
+}
+
+.hero__inner {
+  padding-block: a.$space-8;
+  display: grid;
+  gap: a.$space-5;
+  max-width: 52ch;
+}
+
+.hero--overlay {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.6) 60%
+    ),
+    url("/public/assets/img/hero.png") center/cover no-repeat;
+}

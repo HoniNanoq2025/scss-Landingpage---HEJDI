@@ -1,0 +1,52 @@
+@use "../abstracts/" as a;
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: a.$space-4;
+}
+
+.nav__brand {
+  font-weight: 700;
+  letter-spacing: 0.6em;
+}
+
+.nav__toggle {
+  display: inline-block;
+  background: transparent;
+  color: a.$color-text;
+  border: 1px solid a.$color-muted;
+  padding: a.$space-2 a.$space-3;
+  border-radius: a.$radius-1;
+}
+
+.nav__list {
+  display: none;
+  gap: a.$space-4;
+}
+
+.nav__link {
+  display: block;
+  padding: a.$space-2 a.$space-3;
+  border-bottom: 2 px solid transparent;
+}
+
+.nav__link:hover {
+  border-color: a.$color-primary;
+}
+
+.nav--open .nav__list {
+  display: grid;
+  gap: a.$space-2;
+  margin-top: a.$space-3;
+}
+
+@include a.respond-to(md) {
+  .nav__toggle {
+    display: none;
+  }
+  .nav__list {
+    display: flex;
+  }
+}
