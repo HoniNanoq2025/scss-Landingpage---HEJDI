@@ -103,6 +103,37 @@ small {
   background: #122126;
 }
 
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.08s ease, box-shadow 0.2s ease;
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.button--primary {
+  background: #00b894;
+  color: #062a25;
+}
+
+.button--secondary {
+  background: transparent;
+  color: #e6f0f2;
+  border: 1px solid #9fb0b5;
+}
+
+.button--ghost {
+  background: transparent;
+  color: #e6f0f2;
+  border: 1px dashed #9fb0b5;
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -166,37 +197,6 @@ small {
 
 .hero--overlay {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6) 60%), url("/public/assets/img/hero.png") center/cover no-repeat;
-}
-
-.button {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  border: 0;
-  cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.08s ease, box-shadow 0.2s ease;
-}
-
-.button:active {
-  transform: translateY(1px);
-}
-
-.button--primary {
-  background: #00b894;
-  color: #062a25;
-}
-
-.button--secondary {
-  background: transparent;
-  color: #e6f0f2;
-  border: 1px solid #9fb0b5;
-}
-
-.button--ghost {
-  background: transparent;
-  color: #e6f0f2;
-  border: 1px dashed #9fb0b5;
 }
 
 .card {
