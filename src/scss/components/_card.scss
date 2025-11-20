@@ -1,11 +1,17 @@
 @use "../abstracts/" as a;
 
 .card {
-  background: a.$color-surface;
+  background: a.$color-surface-dark;
   border-radius: a.$radius-2;
   overflow: hidden;
   box-shadow: a.$shadow-1;
   padding: a.$space-4;
+  transition: background-color 0.3s ease;
+}
+
+body.light-mode .card {
+  background: a.$color-surface-light;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card__media {
@@ -19,4 +25,8 @@
 
 .card--elevated {
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+}
+
+body.light-mode .card--elevated {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
 }

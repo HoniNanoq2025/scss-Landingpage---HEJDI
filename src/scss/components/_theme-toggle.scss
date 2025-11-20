@@ -1,0 +1,38 @@
+@use "../abstracts/" as a;
+
+.theme-toggle {
+  position: fixed;
+  bottom: a.$space-5;
+  right: a.$space-5;
+  z-index: 900;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: a.$color-primary;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: #062a25;
+  font-size: 1.5rem;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.theme-toggle:active {
+  transform: scale(0.95);
+}
+
+.theme-toggle__icon {
+  display: none;
+}
+
+.theme-toggle__icon--active {
+  display: block;
+}

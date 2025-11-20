@@ -1,6 +1,8 @@
 @use "../abstracts/" as a;
 
 .nav__container {
+  width: 100vw;
+  padding-inline: 20px;
   position: fixed;
   top: 0;
   left: 0;
@@ -10,9 +12,18 @@
   background-color: transparent;
 }
 
+body.light-mode .nav__container {
+  background-color: a.$color-bg-light;
+}
+
 .nav__container.scrolled {
-  background-color: a.$color-bg;
+  background-color: a.$color-bg-dark;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .nav__container.scrolled {
+  background-color: a.$color-bg-light;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
 .nav {
@@ -30,10 +41,16 @@
 .nav__toggle {
   display: inline-block;
   background: transparent;
-  color: a.$color-text;
-  border: 1px solid a.$color-muted;
+  color: a.$color-text-dark;
+  border: 1px solid a.$color-muted-dark;
   padding: a.$space-2 a.$space-3;
   border-radius: a.$radius-1;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+body.light-mode .nav__toggle {
+  color: a.$color-text-light;
+  border-color: a.$color-muted-light;
 }
 
 .nav__list {
@@ -58,6 +75,10 @@
 }
 
 @include a.respond-to(md) {
+  .nav__container {
+    width: 100vw;
+    padding-inline: 168px;
+  }
   .nav__toggle {
     display: none;
   }

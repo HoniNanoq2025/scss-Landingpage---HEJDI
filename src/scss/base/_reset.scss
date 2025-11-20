@@ -13,12 +13,18 @@ body {
 
 body {
   margin: 0;
-  background: a.$color-bg;
-  color: a.$color-text;
+  background: a.$color-bg-dark;
+  color: a.$color-text-dark;
   font-family: a.$font-family-base;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light-mode {
+  background: a.$color-bg-light;
+  color: a.$color-text-light;
 }
 
 img,
@@ -51,9 +57,14 @@ textarea {
   font: inherit;
   color: inherit;
   background: transparent;
-  border: 1px solid a.$color-muted;
+  border: 1px solid a.$color-muted-dark;
   border-radius: 4px;
   padding: 0.75rem 1rem;
+}
+
+body.light-mode input,
+body.light-mode textarea {
+  border-color: a.$color-muted-light;
 }
 
 label {

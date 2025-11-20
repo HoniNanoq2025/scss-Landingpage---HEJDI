@@ -19,3 +19,14 @@
     ),
     url("/public/assets/img/hero.png") center/cover no-repeat;
 }
+
+// Keep hero text light (due to dark background)
+.hero__title,
+.hero__text {
+  color: a.$color-text-dark !important;
+}
+
+body.light-mode .hero__title,
+body.light-mode .hero__text {
+  color: a.$color-text-dark !important;
+}

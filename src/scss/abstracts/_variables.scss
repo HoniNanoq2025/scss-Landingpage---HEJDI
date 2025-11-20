@@ -1,7 +1,16 @@
-$color-text: #e6f0f2;
-$color-muted: #9fb0b5;
-$color-bg: #0f1a1c;
-$color-surface: #122126;
+// Dark theme (default)
+$color-text-dark: #e6f0f2;
+$color-muted-dark: #9fb0b5;
+$color-bg-dark: #0f1a1c;
+$color-surface-dark: #122126;
+
+// Light theme
+$color-text-light: #1a2a2d;
+$color-muted-light: #4a5c61;
+$color-bg-light: #f8fafb;
+$color-surface-light: #ffffff;
+
+// Shared variables
 $color-primary: #00b894;
 $radius-1: 4px;
 $radius-2: 8px;

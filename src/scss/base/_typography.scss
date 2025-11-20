@@ -25,9 +25,15 @@ h3 {
 
 p {
   margin: 0 0 a.$space-4;
-  color: a.$color-muted;
+  color: a.$color-muted-dark;
+  transition: color 0.3s ease;
 }
 
 small {
-  color: a.$color-muted;
+  color: a.$color-muted-dark;
+  transition: color 0.3s ease;
+}
+
+body.light-mode small {
+  color: a.$color-muted-light;
 }
