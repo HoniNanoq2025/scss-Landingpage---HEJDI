@@ -1,5 +1,20 @@
 @use "../abstracts/" as a;
 
+.nav__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 800;
+  transition: background-color 0.3 ease, box-shadow 0.3 ease;
+  background-color: transparent;
+}
+
+.nav__container.scrolled {
+  background-color: a.$color-bg;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
 .nav {
   display: flex;
   align-items: center;
